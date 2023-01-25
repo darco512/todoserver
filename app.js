@@ -19,17 +19,17 @@ const todoSchema = {
 
 const Todo = mongoose.model("todo", todoSchema);
 
-const buyFood = new Todo({
+const welcome = new Todo({
     name: "Welcome to your todolist"
 });
-const cookFood = new Todo({
+const addItem = new Todo({
     name: "Hit the + to add a new item."
 });
-const eatFood = new Todo({
+const deleteItem = new Todo({
     name: "<--- Hit this to delete an item."
 });
 
-const defaultItems = [buyFood, cookFood,eatFood];
+const defaultItems = [welcome, addItem,deleteItem];
 
 const listSchema= {
     name: String,
